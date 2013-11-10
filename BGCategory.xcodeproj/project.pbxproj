@@ -15,13 +15,14 @@
 		050698E4182F217700E65675 /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 050698E3182F217700E65675 /* BGAppDelegate.m */; };
 		050698E7182F217700E65675 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050698E5182F217700E65675 /* Main_iPhone.storyboard */; };
 		050698EA182F217700E65675 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050698E8182F217700E65675 /* Main_iPad.storyboard */; };
-		050698ED182F217700E65675 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050698EC182F217700E65675 /* BGViewController.m */; };
 		050698EF182F217700E65675 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050698EE182F217700E65675 /* Images.xcassets */; };
 		050698F6182F217700E65675 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050698F5182F217700E65675 /* XCTest.framework */; };
 		050698F7182F217700E65675 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050698D3182F217700E65675 /* Foundation.framework */; };
 		050698F8182F217700E65675 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050698D7182F217700E65675 /* UIKit.framework */; };
 		05069900182F217700E65675 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 050698FE182F217700E65675 /* InfoPlist.strings */; };
 		05069902182F217700E65675 /* BGCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05069901182F217700E65675 /* BGCategoryTests.m */; };
+		0506990F182F224300E65675 /* NSString+NepaliNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0506990E182F224300E65675 /* NSString+NepaliNumber.m */; };
+		05069913182F227800E65675 /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05069912182F227800E65675 /* BGViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +48,16 @@
 		050698E3182F217700E65675 /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
 		050698E6182F217700E65675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		050698E9182F217700E65675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		050698EB182F217700E65675 /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
-		050698EC182F217700E65675 /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 		050698EE182F217700E65675 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		050698F4182F217700E65675 /* BGCategoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGCategoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050698F5182F217700E65675 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		050698FD182F217700E65675 /* BGCategoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BGCategoryTests-Info.plist"; sourceTree = "<group>"; };
 		050698FF182F217700E65675 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		05069901182F217700E65675 /* BGCategoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGCategoryTests.m; sourceTree = "<group>"; };
+		0506990D182F224300E65675 /* NSString+NepaliNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NepaliNumber.h"; sourceTree = "<group>"; };
+		0506990E182F224300E65675 /* NSString+NepaliNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NepaliNumber.m"; sourceTree = "<group>"; };
+		05069911182F227800E65675 /* BGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
+		05069912182F227800E65675 /* BGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +117,12 @@
 		050698D9182F217700E65675 /* BGCategory */ = {
 			isa = PBXGroup;
 			children = (
+				05069910182F227800E65675 /* ViewController */,
+				0506990C182F224300E65675 /* Category */,
 				050698E2182F217700E65675 /* BGAppDelegate.h */,
 				050698E3182F217700E65675 /* BGAppDelegate.m */,
 				050698E5182F217700E65675 /* Main_iPhone.storyboard */,
 				050698E8182F217700E65675 /* Main_iPad.storyboard */,
-				050698EB182F217700E65675 /* BGViewController.h */,
-				050698EC182F217700E65675 /* BGViewController.m */,
 				050698EE182F217700E65675 /* Images.xcassets */,
 				050698DA182F217700E65675 /* Supporting Files */,
 			);
@@ -153,6 +156,24 @@
 				050698FE182F217700E65675 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0506990C182F224300E65675 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0506990D182F224300E65675 /* NSString+NepaliNumber.h */,
+				0506990E182F224300E65675 /* NSString+NepaliNumber.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		05069910182F227800E65675 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05069911182F227800E65675 /* BGViewController.h */,
+				05069912182F227800E65675 /* BGViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				050698ED182F217700E65675 /* BGViewController.m in Sources */,
 				050698E0182F217700E65675 /* main.m in Sources */,
+				05069913182F227800E65675 /* BGViewController.m in Sources */,
 				050698E4182F217700E65675 /* BGAppDelegate.m in Sources */,
+				0506990F182F224300E65675 /* NSString+NepaliNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +497,7 @@
 				05069907182F217700E65675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05069908182F217700E65675 /* Build configuration list for PBXNativeTarget "BGCategoryTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +506,7 @@
 				0506990A182F217700E65675 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
